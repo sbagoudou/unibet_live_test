@@ -36,8 +36,8 @@ public class BetService {
     /**
      * Creates a new bet for the specified {@link Customer} in the specified {@link Selection}
      *
-     * @param customer  target customer
-     * @param selection target selection
+     * @param customer  the target customer
+     * @param selection the target selection
      * @param amount    amount to bet
      */
     public void addBet(Customer customer, Selection selection, BigDecimal amount) {
@@ -58,11 +58,10 @@ public class BetService {
                 .sum();
     }
 
-
     /**
      * Sets a state to the {@link Bet} and updates {@link Customer} balance in case of victory
      *
-     * @param bet bet the target bet
+     * @param bet the target bet
      * @return 1 if operation is successful, 0 otherwise
      */
     public int closeBet(Bet bet) {
